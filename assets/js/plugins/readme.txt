@@ -1,0 +1,1 @@
+Place (un-minified) plugins in this directory. Use a build script (or manually) to minify and concatinate in /assets/js/plugins.js. 

@@ -1,0 +1,595 @@
+/* _________________________________________________
+
+For: 
+Original Author: 
+URL: 
+
+Thanks to: Ethan Marcotte, HTML5BoilorPlate.com & 320andUp
+____________________________________________________
+
+`GLOSSARY`:
+
+  NORMALIZE (instead of reset)
+
+  ROOT
+  TYPOGRAPHY
+  BASE STYLES
+    -LINKS
+    -FIGURES & IMAGES
+    -TABLES
+    -FORMS
+  STRUCTURE
+    -HEADER
+    -FOOTER
+    -MAIN STRUCTURE
+  GENERAL CONTENT
+  ...
+  MEDIA QUERIES
+  UTILITY CLASSES
+  PRINT QUERIES
+
+`COLOURS`:
+  colorname : #value ;
+
+____________________________________________________ */
+/*
+ *  `NORMALIZE`
+ * ---------------------------------------------------------------- */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+  display: block;
+}
+
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+audio:not([controls]) {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+html, button, input, select, textarea {
+  font-family: sans-serif;
+  color: #222;
+}
+
+body {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+::-moz-selection {
+  background: #ccc;
+  color: #222;
+  text-shadow: none;
+}
+
+::selection {
+  background: #ccc;
+  color: #222;
+  text-shadow: none;
+}
+
+a {
+  color: #00e;
+}
+
+a:visited {
+  color: #551a8b;
+}
+
+a:hover {
+  color: #06e;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:hover, a:active {
+  outline: 0;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+blockquote {
+  margin: 1em 40px;
+}
+
+dfn {
+  font-style: italic;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+ins {
+  background: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+pre, code, kbd, samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+q {
+  quotes: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+small {
+  font-size: 85%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+ul, ol {
+  margin: 1em 0;
+  padding: 0 0 0 40px;
+}
+
+dd {
+  margin: 0 0 0 40px;
+}
+
+nav ul, nav ol {
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+figure {
+  margin: 0;
+}
+
+form {
+  margin: 0;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  border: 0;
+  *margin-left: -7px;
+  padding: 0;
+  white-space: normal;
+}
+
+button, input, select, textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+
+button, input {
+  line-height: normal;
+}
+
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+  *overflow: visible;
+}
+
+button[disabled], input[disabled] {
+  cursor: default;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+  *width: 13px;
+  *height: 13px;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+
+input:invalid, textarea:invalid {
+  background-color: #f0dddd;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td {
+  vertical-align: top;
+}
+
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: black;
+  padding: 0.2em 0;
+}
+
+/*
+ *  `ROOT`
+ * ------------------------------------------------------------------ */
+body {
+  background: #e4e5e6 url("../../img/bg-crisscross-pixelpattern.png") repeat 0 0;
+}
+
+/*
+ *  `TYPOGRAPHY` (Base)
+ * ------------------------------------------------------------------ */
+body {
+  color: #222222;
+  font-family: gesta, sans-serif;
+  font-size: 87.5%;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: gesta, sans-serif;
+  margin: 0 0 1.5em;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+p,
+ol,
+ul,
+dl,
+address {
+  font-size: 1.429em;
+  margin: 0 0 1.5em;
+}
+
+sup,
+sub {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+pre,
+code {
+  font: .875em 'andale mono', 'lucida console', monospace;
+  line-height: 1.5;
+}
+
+/*
+ *  `BASE STYLES`
+ * ------------------------------------------------------------------ */
+/*-- ~LINKS --*/
+a,
+a:visited {
+  border-bottom: 2px solid rgba(0, 170, 248, 0.5);
+  color: rgba(221, 15, 34, 0.65);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #6f77a5;
+}
+
+/*-- ~FIGURES & IMAGES --*/
+/*-- ~TABLES --*/
+/*-- ~FORMS --*/
+/*
+ *  `MAIN STRUCTURE`
+ * ------------------------------------------------------------------ */
+#container {
+  padding: 8% 5%;
+}
+
+/*
+ *  `HEADER`
+ * ------------------------------------------------------------------ */
+header h1 {
+  color: rgba(0, 170, 248, 0.5);
+  border-bottom: 16px solid rgba(0, 170, 248, 0.5);
+  display: inline-block;
+  font-size: 7em;
+  line-height: .85;
+  margin-bottom: .175em;
+  padding: 0 0 .175em 5px;
+  position: relative;
+  text-shadow: -10px -6px 0px rgba(221, 15, 34, 0.65);
+}
+
+header h1::after {
+  background: rgba(221, 15, 34, 0.75);
+  bottom: -10px;
+  content: '';
+  display: block;
+  height: 16px;
+  left: -8px;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+/*
+ *  `FOOTER`
+ * ------------------------------------------------------------------ */
+/*
+ *  `GENERAL CONTENT`
+ * ------------------------------------------------------------------ */
+.heart {
+  color: rgba(221, 15, 34, 0.65);
+}
+
+p {
+  max-width: 522px;
+  width: 98%;
+}
+
+p:first-child {
+  font-size: 2em;
+  margin-bottom: .85em;
+}
+
+/*
+ *  `UTILITY CLASSES`
+ * ------------------------------------------------------------------ */
+.ir {
+  display: block;
+  border: 0;
+  text-indent: -999em;
+  overflow: hidden;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr;
+  *line-height: 0;
+}
+
+.ir br {
+  display: none;
+}
+
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+/*
+ *  `MEDIA QUERIES`
+ * ------------------------------------------------------------------ */
+@media screen and (min-width: 68em) and (min-height: 53em) {
+  body {
+    font-size: 87.5%;
+  }
+
+  header h1 {
+    font-size: 10em;
+    text-shadow: -13px -7px 0px rgba(221, 15, 34, 0.65);
+  }
+
+  p {
+    max-width: 690px;
+  }
+}
+@media screen and (min-width: 75em) and (min-height: 57em) {
+  body {
+    font-size: 93.75%;
+  }
+
+  header h1 {
+    font-size: 13em;
+    margin-bottom: 5%;
+    text-shadow: -18px -10px 0px rgba(221, 15, 34, 0.65);
+  }
+
+  p {
+    max-width: 1392px;
+  }
+}
+/*
+ *  `PRINT`
+ * ------------------------------------------------------------------*/
+@media print {
+  * {
+    background: transparent !important;
+    color: black !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -ms-filter: none !important;
+  }
+
+  a, a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+    content: "";
+  }
+
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr, img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+}
+
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2, h3 {
+    page-break-after: avoid;
+  }
+}

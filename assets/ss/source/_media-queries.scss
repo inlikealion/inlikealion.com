@@ -1,0 +1,39 @@
+/*
+ *  `MEDIA QUERIES`
+ * ------------------------------------------------------------------ */
+
+@media screen and (min-width: 68em) and (min-height: 53em) {
+	body {
+		font-size: 87.5%;
+	}
+	header h1 {
+		font-size: 10em;
+		text-shadow: -13px -7px 0px rgba(221,15,34,.65);
+	}
+	p {
+		max-width: 690px;
+	}
+}
+
+@media screen and (min-width: 75em) and (min-height: 57em) {
+	body {
+		font-size: 93.75%;
+	}
+	header h1 {
+		font-size: 13em;
+		margin-bottom: 5%;
+		text-shadow: -18px -10px 0px rgba(221,15,34,.65);
+	}
+	p {
+		max-width: 1392px;
+	}
+}
+
+// @media screen and (min-width: 80em) and (min-height: 62em) {
+// 	body {
+// 		font-size: 100%;
+// 	}
+// 	header h1 {
+// 		font-size: 20em;
+// 	}
+// }

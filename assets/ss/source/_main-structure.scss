@@ -1,0 +1,40 @@
+/*
+ *  `MAIN STRUCTURE`
+ * ------------------------------------------------------------------ */
+
+#container {
+	padding: 8% 5%;
+}
+
+/*
+ *  `HEADER`
+ * ------------------------------------------------------------------ */
+
+header h1 {
+	color: rgba(0,170,248,.5);
+	border-bottom: 16px solid rgba(0,170,248,.5);
+	display: inline-block;
+	font-size: 7em;
+	line-height: .85;
+	margin-bottom: .175em;
+	padding: 0 0 .175em 5px;
+	position: relative;
+	text-shadow: -10px -6px 0px rgba(221,15,34,.65);
+}
+
+header h1::after {
+	background: rgba(221,15,34,.75);
+	bottom: -10px;
+	content: '';
+	display: block;
+	height: 16px;
+	left: -8px;
+	position: absolute;
+	width: 100%;
+	z-index: -1;
+}
+
+/*
+ *  `FOOTER`
+ * ------------------------------------------------------------------ */
+

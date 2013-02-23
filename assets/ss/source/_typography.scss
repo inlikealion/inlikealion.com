@@ -1,0 +1,101 @@
+/*
+ *  `TYPOGRAPHY` (Base)
+ * ------------------------------------------------------------------ */
+
+body {
+	color: $color_text;
+	font-family: gesta, sans-serif;
+	font-size: 87.5%;
+	font-weight: 500;
+	line-height: 1.5;
+}
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+	font-family: gesta, sans-serif;
+	margin: 0 0 1.5em;
+}
+h1 { 
+	text-transform: uppercase;
+}
+h2 { 
+	// font-size: ;
+}
+h3 { 
+	// font-size: ;
+}
+h4 { 
+	// font-size: ;
+}
+h5 { 
+	// font-size: ;
+}
+h6 { 
+	// font-size: ;
+}
+
+p, 
+ol, 
+ul, 
+dl, 
+address {
+	font-size: 1.429em;
+	margin: 0 0 1.5em;
+}
+ul, 
+ol { 
+	
+}
+ul {}
+ol {}
+li ul, 
+li ol { 
+	// font-size: ;
+	// margin: ;
+}
+
+dl, 
+dd {}
+dt {}
+
+blockquote  {}
+
+b, 
+strong  {}
+i, 
+em {}
+
+sup, 
+sub { 
+	font-size: 75%; 
+	line-height: 0;
+	position: relative;
+}
+sup { 
+	top: -.5em;
+}
+sub { 
+	bottom: -.25em;
+}
+
+address {}
+
+pre { 
+	white-space: pre; 
+	white-space: pre-wrap; 
+	word-wrap: break-word;
+}
+
+pre, 
+code { 
+	font: .875em 'andale mono', 'lucida console', monospace; 
+	line-height: 1.5;
+}
+
+small {
+	// font-size: ;
+}
+
