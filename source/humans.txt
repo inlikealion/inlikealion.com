@@ -3,7 +3,7 @@
 
 
 /* TEAM */
-  <your title>: <your name>
+  Designer / Developer: Matt Bainton
   Site: InLikeALion.com
   Twitter: @inlikealion
   Location:
