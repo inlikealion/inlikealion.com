@@ -1,0 +1,77 @@
+==================================================================
+https://keybase.io/inlikealion
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://inlikealion.com
+  * I am inlikealion (https://keybase.io/inlikealion) on keybase.
+  * I have a public key with fingerprint E539 7DEB 5B3F 9181 CDE0  6463 86AF 0738 4294 0BB9
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "client": {
+            "name": "keybase.io node.js client",
+            "version": "0.3.2"
+        },
+        "key": {
+            "fingerprint": "e5397deb5b3f9181cde0646386af073842940bb9",
+            "host": "keybase.io",
+            "key_id": "86AF073842940BB9",
+            "uid": "a0d8dae3b93e4ede71dfe07d1559d500",
+            "username": "inlikealion"
+        },
+        "merkle_root": {
+            "ctime": 1399057238,
+            "hash": "dcf21851e8a0f16d6691259b6dd737fd7c2e8522daf788a9a3ce7252703bbc70f94b446518aa4452b367265f266f10b1383526b909e788fa306a751424da7fe8",
+            "seqno": 3969
+        },
+        "service": {
+            "hostname": "inlikealion.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1399057330,
+    "expire_in": 157680000,
+    "prev": "197a181aaf39c04e51031d77affb5ce39686194f781ba814d8ba241483d04e07",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG/MacGPG2 v2.0.22 (Darwin)
+Comment: GPGTools - https://gpgtools.org
+
+owFlkl1oHUUYhk+qNiS2cnql0GDbrQU14Tg/O39HLRpK0hQSTZpqqZrjzM5Mss3J
+7nH3NDGEA2nFoliiBTUotbYWBEtLtYqQQCklMdIKKv5dGG+8EAyCVktopUWdDfGn
+OFc7O8/3zvt+37y0+oZcY93+U/W89eWbp+o+WVC57cFPp8c8FetRrzjmBeXQRNXs
+K5JDxit6g2ZUydQUwnh9FGtT2J2uX2ZavGGTpGEcOQoUcAF5tZYMz4ptGPWbpJKE
+mZZnCBZMG0UUtgJyGGgDqE8xp9IChrmPhA+UEk5yIE6r193qLWmWQu3+cvpg2z98
+a2vG71k6kEBzLQ1WAhvfaMOgtgYwDQkRmgCQgalJliOFUTkcNLKcWXeWh0wyWDal
+JI6XcgfVMKMgFgIQhjB3pmQ64Op0YBHkBBougYVUUyogIkJRrRlmVrMAGU4Q0tIy
+zqWQODAMEcQAVipgwApf+T4lkEvp+wQpTBmixCJKLQQKYo4JokoAYVy9lRhQyQj0
+ka8ls4a7FKl5Koq9IhZU1LJdMhwGJnOd9e3/8QpBPOSqKklcjYO47A4HqtVKMUtd
+Ha1k8HsjRpWWdUoqjLQb3H8nCx16fUcwBi2eeboSJqYUZgRhlAO3snvMsNOEgkk3
+ZSktFgHwDYEAQ82YtFaRwDjznELhuyZBJTn0NVcS+dDnWDsasH9z+s6n7HeSadgf
+yeqexHi15+uabszVNeZW3rQie7q5xob83+/5/UP1f7btPP5H8a10fnGuf2Tq0i8d
+4+fBj2+sPXiUlpt/bX/3yvQHk7umHn32529714lj7Q37f+u7tGZwtv2Lh3Y8x3Lx
+HUfOLb7Y/bjpemXf5OWFq9u9Z25bdeDt9PjdMyfu751dt2+hMHPtaPfomw8P9V27
+sO27udLmKP5809q7WssdnVsLe89sufzxxs23T2/Il/Lo9D1NDRvPfH/foYUTs+Mz
+O49c7OqZf22gb8t0dWTNOfRA80nZVFrV8cTE6q2dh+d+OFurf+eRrt8/O3Zw4rFN
+kw3zV7/8aNdZ/4UxuzLf/M0EufPW7hU1e7GnY3fP1ydvaWorj/QeuMA+ffUrJRc3
+7L2S5Du3nX/9yQ/H7839BQ==
+=E75M
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/inlikealion
+
+==================================================================
