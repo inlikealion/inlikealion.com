@@ -2,6 +2,12 @@
  *  `MEDIA QUERIES`
  * ------------------------------------------------------------------ */
 
+@media only screen and (min-width: 48.75em) {
+	header h1 {
+		font-size: 7em;
+	}
+} /* end mq ========================== */
+
 @media screen and (min-width: 68em) and (min-height: 53em) {
 	body {
 		font-size: 87.5%;
@@ -13,7 +19,7 @@
 	p {
 		max-width: 690px;
 	}
-}
+} /* end mq ========================== */
 
 @media screen and (min-width: 75em) and (min-height: 57em) {
 	body {
@@ -27,7 +33,7 @@
 	p {
 		max-width: 1392px;
 	}
-}
+} /* end mq ========================== */
 
 // @media screen and (min-width: 80em) and (min-height: 62em) {
 // 	body {
